@@ -21,7 +21,7 @@ public class HttpDemoApplicationTest {
 
     @Test
     public void httpGet(){
-        User user = restTemplate.getForObject("http://localhost:8080/user/2", User.class);
+        User user = restTemplate.getForObject("http://localhost:8088/user/1", User.class);
 
         System.out.println(user==null ? "hah":user.toString());
 
